@@ -1,9 +1,10 @@
 package com.lab.jpa.gestaoufc.model;
-import com.lab.jpa.gestaoufc.model.enums.ResultadoLuta;
 import com.lab.jpa.gestaoufc.model.enums.*;
 import jakarta.persistence.*;
 
 import lombok.*;
+
+import java.util.UUID;
 
 @Entity
 @Table(name = "lutas")
@@ -14,8 +15,9 @@ import lombok.*;
 @Builder
 public class Luta {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    @EqualsAndHashCode.Include
+    private UUID id;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "evento_id", nullable = false)

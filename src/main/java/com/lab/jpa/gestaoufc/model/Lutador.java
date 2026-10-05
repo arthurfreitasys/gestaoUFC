@@ -4,6 +4,8 @@ import com.lab.jpa.gestaoufc.model.enums.CategoriaPeso;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.UUID;
+
 @Entity
 @Table(name = "lutador")
 @Getter
@@ -13,8 +15,9 @@ import lombok.*;
 @Builder
 public class Lutador {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    @EqualsAndHashCode.Include
+    private UUID id;
 
     @Column(nullable = false, length = 200)
     private String nome;

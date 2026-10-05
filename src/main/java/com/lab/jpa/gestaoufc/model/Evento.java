@@ -5,6 +5,7 @@ import lombok.*;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.UUID;
 
 @Entity
 @Table(name = "evento")
@@ -15,8 +16,9 @@ import java.util.List;
 @Builder
 public class Evento {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    @EqualsAndHashCode.Include
+    private UUID id;
 
     @Column(nullable = false)
     private String nomeEvento; //Exemplo: UFC 331
