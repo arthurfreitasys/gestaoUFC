@@ -1,4 +1,4 @@
-package com.lab.jpa.gestaoufc.model;
+package com.lab.jpa.gestaoufc.domain.model;
 
 import jakarta.persistence.*;
 import lombok.*;

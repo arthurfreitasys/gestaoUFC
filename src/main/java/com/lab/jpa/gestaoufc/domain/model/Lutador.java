@@ -1,6 +1,6 @@
-package com.lab.jpa.gestaoufc.model;
+package com.lab.jpa.gestaoufc.domain.model;
 
-import com.lab.jpa.gestaoufc.model.enums.CategoriaPeso;
+import com.lab.jpa.gestaoufc.domain.enums.CategoriaPeso;
 import jakarta.persistence.*;
 import lombok.*;
 

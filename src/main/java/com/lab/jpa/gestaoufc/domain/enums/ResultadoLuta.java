@@ -1,4 +1,4 @@
-package com.lab.jpa.gestaoufc.model.enums;
+package com.lab.jpa.gestaoufc.domain.enums;
 
 public enum ResultadoLuta {
     VITORIA_LUTADOR1,

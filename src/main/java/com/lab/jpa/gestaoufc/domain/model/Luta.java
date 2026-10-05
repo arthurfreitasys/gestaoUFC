@@ -1,4 +1,5 @@
-package com.lab.jpa.gestaoufc.model;
+package com.lab.jpa.gestaoufc.domain.model;
+import com.lab.jpa.gestaoufc.domain.enums.ResultadoLuta;
 import com.lab.jpa.gestaoufc.model.enums.*;
 import jakarta.persistence.*;
 
