@@ -19,7 +19,7 @@ public class Lutador {
     @EqualsAndHashCode.Include
     private UUID id;
 
-    @Column(nullable = false, length = 200)
+    @Column(nullable = false)
     private String nome;
 
     @Column(nullable = true, length = 150)

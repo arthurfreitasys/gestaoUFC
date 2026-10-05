@@ -1,6 +1,7 @@
 package com.lab.jpa.gestaoufc.domain.model;
+import com.lab.jpa.gestaoufc.domain.enums.CategoriaPeso;
 import com.lab.jpa.gestaoufc.domain.enums.ResultadoLuta;
-import com.lab.jpa.gestaoufc.model.enums.*;
+import com.lab.jpa.gestaoufc.domain.model.*;
 import jakarta.persistence.*;
 
 import lombok.*;
@@ -35,5 +36,9 @@ public class Luta {
     @Enumerated(EnumType.STRING)
     @Column(nullable = false,name = "resultado")
     private ResultadoLuta resultado;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false, name = "categoria")
+    private CategoriaPeso categoriaPeso;
 
 }
