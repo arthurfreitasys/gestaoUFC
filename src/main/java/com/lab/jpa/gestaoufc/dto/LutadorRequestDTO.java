@@ -5,7 +5,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.PositiveOrZero;
 
-public record LutadorRequestDTO(
+public record LutadorRequestDTO( // O que o usuario registra
         @NotBlank(message = "O nome é obrigatorio")
         String nome,
 

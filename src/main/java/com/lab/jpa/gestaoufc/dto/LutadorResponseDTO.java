@@ -4,7 +4,7 @@ import com.lab.jpa.gestaoufc.domain.enums.CategoriaPeso;
 
 import java.util.UUID;
 
-public record LutadorResponseDTO(
+public record LutadorResponseDTO( // O que a API devolve
 
         UUID id,
         String nome,

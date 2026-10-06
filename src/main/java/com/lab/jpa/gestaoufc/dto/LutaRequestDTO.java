@@ -2,8 +2,6 @@ package com.lab.jpa.gestaoufc.dto;
 
 import com.lab.jpa.gestaoufc.domain.enums.CategoriaPeso;
 import com.lab.jpa.gestaoufc.domain.enums.ResultadoLuta;
-import com.lab.jpa.gestaoufc.domain.model.Evento;
-import com.lab.jpa.gestaoufc.domain.model.Lutador;
 import jakarta.validation.constraints.NotNull;
 
 import java.util.UUID;

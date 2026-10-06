@@ -15,7 +15,7 @@ public record EventoRequestDTO(
         @NotBlank(message = "Local do evento é obrigatorio")
         String localEvento
 
-       //lutas podem ser modificadas, excluidas, adicionadas, etc..
+       //lista de lutas podem ser modificadas, excluidas, adicionadas, etc..
 
 ) {
 }
